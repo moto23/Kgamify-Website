@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap');
+@import "tailwindcss";
+
+
+.rubik-font {
+    font-family: Rubik;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.custom-gradient {
+    background: linear-gradient(135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+}
+footer1{
+    @apply text-pink-600
+}
+
+h1 {
+    @apply text-6xl font-light tracking-tight mb-6;
+}
+
+h2 {
+    @apply text-4xl font-light text-purple-800 tracking-tight mb-4;
+}
+
+h3 {
+    @apply text-purple-800 text-3xl font-medium;
+}
+
+h4 {
+    @apply text-xl font-medium text-purple-800;
+}
+
+h5 {
+    @apply text-2xl font-light text-purple-800 mb-2;
+}
+
+p {
+    @apply text-gray-600;
+    
+}
+
+p.lead {
+    @apply text-pink-400 mb-8;
+}
+
+.text-primary {
+    @apply text-pink-400;
+}
+
+.light-font {
+    @apply font-light;
+}
+
+.btn {
+    @apply text-lg font-medium uppercase py-1.5 px-5 transition-all duration-300;
+}
+
+.btn-outline-light:hover {
+    @apply text-pink-600;
+}
+
+.btn-primary {
+    @apply rounded bg-gradient-to-r from-pink-500 text-white to-pink-400 shadow-lg font-medium px-6 py-2 border-0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not([disabled]):not(.disabled).active,
+.btn-primary:not([disabled]):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    @apply bg-gradient-to-r from-pink-400 to-pink-500 shadow-xl text-white;
+}
+
+.btn-light {
+    @apply rounded bg-white shadow-lg text-purple-800 text-sm font-medium my-2 py-2 px-6 leading-7;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    @apply py-3 px-4 text-base;
+}
+
+.light-bg {
+    @apply bg-gray-100;
+}
+.card-features1 {
+    content: "";
+    position: absolute;
+    width: 3px;
+    color: #fc73b4;
+    background: -moz-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
+    background: -webkit-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
+    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.circle-icon {
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    background-color: #FFF;
+    color: #f5378e;
+    font-size: 48px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.media {
+    display: -ms-flexbox;
+    display: flex
+;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+@media (max-width: 992px) {
+    .circle-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+        line-height: 50px;
+    }
+}
+.section {
+    @apply py-20;
+}
+
+.section-title {
+    @apply text-center mb-12;
+}
+
+.section-title small {
+    @apply text-gray-400;
+}
+
+@media (max-width:767px) {
+    h1 {
+        @apply text-4xl;
+    }
+    h2 {
+        @apply text-2xl;
+    }
+}
+
+.card-text {
+    margin-bottom: 8px;
+}
+
+.gradient-fill {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
